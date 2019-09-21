@@ -3,97 +3,112 @@
 
   <head>
     <title>Selina Mangaroo Profile</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="mycss_web.css">
+    <link rel="stylesheet" href="mycss_tablet.css">
   </head>
 
-<body>
+  <body>
 
-  <div class="">
-    <h3>Menu</h3>
-      <a href="#fav_sites">Fav Websites</a>
-      <a href="#fav_vids">Fav Music Vid</a>
-      <a href="#interest">General Interests</a>
-  </div>
+    <header>
+      <div class="container">
+          <div class="nav">
+            <h5>Menu</h5>
+                <a href="#fav_sites">Favorite Websites</a>
+                <a href="#fav_vids">Favorite Music Video</a>
+                <a href="#interest">My General Interests</a>
+          </div>
 
-<h3>   </h3>
+        <div class="profilepic">
+          <h1>Selina Mangaroo</h1>
+          <img src="/static/ProfilePic.jpg" width="250" height="325">
+        </div>
+      </div>
+    </header>
 
-  <div class="" align=>
+  <div class="container2">
+      <div class="aboutme">
+        <p style="font-size: 24px"> <b>About me</b> </p>
+          <p>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain!</p>
+          <p>Birthday: July 22nd</p>
+          <p>Location: South Ozone Park, New York</p>
+          <p>Favorite Color: <span style="color:purple">Purple</span></p>
 
-    <div class="">
-        <img src="/static/ProfilePic.jpg" width="250" height="325">
-    </div>
-
-  <h1>Selina Mangaroo</h1>
-
-  <h3>About Me</h3>
-    <p>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain!</p>
-    <p>Birthday: July 22nd</p>
-    <p>Location: South Ozone Park, New York</p>
-    <p>Favorite Color: <span style="color:purple">Purple</span></p>
-
-  <h3>Education</h3>
-    <p>St. Johns University   May 2020</p>
-    <p>Major: Computer Science, with a concentration in Business</p>
-
-
-  <h3>Work Experience</h3>
-
-    <p>Diversity Peer Educator - St. Johns University</p>
-    <p>Explainer Trainee - New York Hall of Science</p>
-
-      <table style="width:60%">
-        <h3>Programming Skills</h3>
-        <tr align="">
-          <td>Intermediate Java</td>
-        </tr>
-        <tr align="">
-          <td>Beginner HTML</td>
-        </tr>
-        <tr align="">
-          <td>Beginner Python</td>
-        </tr>
-        <tr align="">
-          <td>Beginner Javascript</td>
-        </tr>
-      </table>
-
-
-    <a name="interest"><h3>General Interests</h3></a>
-      <ul>
-        <li>Watching Youtube</li>
-        <li>Watching Netflix</li>
-        <li>Hanging out with friends</li>
-        <li>Astrology</li>
-
-      </ul>
-
-      <div>
-
-      <a name="fav_vids"> <h3>My Favorite Music Video!</h3></a>
-
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/NG2zyeVRcbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <p style="font-size: 24px"> <b>Education</b> </p>
+          <p>St. Johns University   May 2020</p>
+          <p>Major: Computer Science, with a concentration in Business</p>
       </div>
 
-      <a name="fav_sites"><h3>My Favorite Websites!</h3></a>
-      <ul>
-        <li> <a href="https://www.google.com"> Google </a> </li>
-        <li> <a href="https://www.amazon.com"> Amazon </a> </li>
-        <li> <a href="https://www.youtube.com"> Youtube </a> </li>
-        <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
+      <div class="workexp">
+        <p style="font-size: 24px"> <b>Work Experience</b> </p>
+          <p>Explainer Trainee - New York Hall of Science</p>
+          <p>Diversity Peer Educator - St. Johns University</p>
+      </div>
 
-      </ul>
+      <div class="table">
+        <table>
+          <tr>
+            <th> Programming Skills </th>
+          </tr>
+             <tr align="center">
+               <td>Intermediate Java</td>
+             </tr>
+             <tr align="center">
+               <td>Beginner HTML</td>
+             </tr>
+             <tr align="center">
+               <td>Beginner Python</td>
+             </tr>
+             <tr align="center">
+               <td>Beginner Javascript</td>
+             </tr>
+         </table>
+      </div>
 
-  </div>
+       <div class="interest">
+         <a name="interest"><h3>General Interests</h3></a>
+           <ul>
+             <li>Watching Youtube</li>
+             <li>Watching Netflix</li>
+             <li>Hanging out with friends</li>
+             <li>Astrology</li>
+           </ul>
+       </div>
 
-  <img src="https://www.amazingclubs.com/img/small/flowerofthemonthclub.jpg" width="200" height="200">
-  
-  
-  <form class="" action="profile.html" method="post">   <!--- allows user input --->
-    <input type="text" placeholder= "Enter your username" name="username" value="">
-    <input type="text" placeholder= "Enter your password" name="password" value="">
-    <input type="submit" value="submit">
-  </form>
+        <div class=fav_vids>
+          <a name="fav_vids"> <h3>My Favorite Music Video!</h3></a>
+          <p><b>Miley Cyrus - The Climb</b></p>
+            <div class="resp_container">
+              <iframe src="https://www.youtube.com/embed/NG2zyeVRcbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="fav_sites">
+          <a name="fav_sites"><h3>My Favorite Websites!</h3></a>
+          <ul>
+            <li> <a href="https://www.google.com"> Google </a> </li>
+            <li> <a href="https://www.amazon.com"> Amazon </a> </li>
+            <li> <a href="https://www.youtube.com"> Youtube </a> </li>
+            <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
+          </ul>
+        </div>
+
+        <div class="webimg">
+          <h3>Web Hosted Image</h3>
+          <p>Pretty Flowers!</p>
+          <img src="https://www.amazingclubs.com/img/small/flowerofthemonthclub.jpg" width="200" height="200">
+        </div>
+    </div>
+
+      <div class="form">
+        <h3>Form</h3>
+        <form class="" action="profile.html" method="post">   <!--- allows user input --->
+          <input type="text" placeholder= "Enter your username" name="username" value="">
+          <input type="text" placeholder= "Enter your password" name="password" value="">
+          <input type="submit" value="submit">
+        </form>
+      </div>
+
 
 </body>
 </html>
-

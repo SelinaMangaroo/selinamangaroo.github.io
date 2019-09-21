@@ -1,0 +1,140 @@
+body{
+  background-color: #FA8072;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0px;
+}
+
+h1{
+  text-align: center;
+  color: DarkRed;
+}
+
+h3, h5{
+  color: DarkRed;
+  padding: 1%;
+}
+
+.container{
+  margin: auto;
+  align-items: center;
+  border: 1px solid chocolate;
+  width: 95%;
+}
+
+
+header {
+  background-color: #483D8B;
+  color: #ffffff
+  text-align: center;
+  padding-top: 25px;
+  min-height: 70px;
+  border-bottom: #C71585 2px solid;
+}
+
+
+li{
+  margin: 1px;
+  padding: 1px;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 1%;
+}
+
+header a:hover {
+  color: hotpink;
+}
+
+.profilepic img{
+  margin-left: 40%;
+  margin-right: 50%;
+}
+
+.aboutme{
+  margin:auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+.workexp{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+
+table{
+  width:auto;
+  padding: 1%;
+  border: 1px solid orange;
+  margin: auto;
+}
+
+tr, td{
+  margin: auto;
+  border: 1px solid maroon;
+}
+
+.interest{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+.fav_vids{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+.resp-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.fav_sites{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+a:hover {
+  color: green;
+}
+
+.webimg{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+.form{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
