@@ -11,33 +11,37 @@
   <body>
 
     <header>
-      <div class="container">
+
           <div class="nav">
             <h5>Menu</h5>
                 <a href="#fav_sites">Favorite Websites</a>
                 <a href="#fav_vids">Favorite Music Video</a>
                 <a href="#interest">My General Interests</a>
+                <a href="aboutme">Read About Me!</a>
           </div>
 
         <div class="profilepic">
           <h1>Selina Mangaroo</h1>
-          <img src="/static/ProfilePic.jpg" width="250" height="325">
+          <img src="/static/ProfilePic.jpg" width="250" height="325" align="center">
         </div>
-      </div>
+
     </header>
 
-  <div class="container2">
+  <div class="container">
+
       <div class="aboutme">
-        <p style="font-size: 24px"> <b>About me</b> </p>
+        <a name="aboutme"> <p style="font-size: 24px"> <b>About me</b> </p>  </a>
           <p>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain!</p>
           <p>Birthday: July 22nd</p>
           <p>Location: South Ozone Park, New York</p>
           <p>Favorite Color: <span style="color:purple">Purple</span></p>
-
-        <p style="font-size: 24px"> <b>Education</b> </p>
-          <p>St. Johns University   May 2020</p>
-          <p>Major: Computer Science, with a concentration in Business</p>
       </div>
+
+        <div class="education">
+          <p style="font-size: 24px"> <b>Education</b> </p>
+            <p>St. Johns University   May 2020</p>
+            <p>Major: Computer Science, with a concentration in Business</p>
+        </div>
 
       <div class="workexp">
         <p style="font-size: 24px"> <b>Work Experience</b> </p>
@@ -75,22 +79,20 @@
            </ul>
        </div>
 
+       <div class="fav_sites">
+         <a name="fav_sites"><h3>My Favorite Websites!</h3></a>
+         <ul>
+           <li> <a href="https://www.google.com"> Google </a> </li>
+           <li> <a href="https://www.amazon.com"> Amazon </a> </li>
+           <li> <a href="https://www.youtube.com"> Youtube </a> </li>
+           <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
+         </ul>
+       </div>
+
         <div class=fav_vids>
           <a name="fav_vids"> <h3>My Favorite Music Video!</h3></a>
           <p><b>Miley Cyrus - The Climb</b></p>
-            <div class="resp_container">
               <iframe src="https://www.youtube.com/embed/NG2zyeVRcbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="fav_sites">
-          <a name="fav_sites"><h3>My Favorite Websites!</h3></a>
-          <ul>
-            <li> <a href="https://www.google.com"> Google </a> </li>
-            <li> <a href="https://www.amazon.com"> Amazon </a> </li>
-            <li> <a href="https://www.youtube.com"> Youtube </a> </li>
-            <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
-          </ul>
         </div>
 
         <div class="webimg">
@@ -98,7 +100,7 @@
           <p>Pretty Flowers!</p>
           <img src="https://www.amazingclubs.com/img/small/flowerofthemonthclub.jpg" width="200" height="200">
         </div>
-    </div>
+    </div> <!--- container end --->
 
       <div class="form">
         <h3>Form</h3>
@@ -108,7 +110,6 @@
           <input type="submit" value="submit">
         </form>
       </div>
-
 
 </body>
 </html>

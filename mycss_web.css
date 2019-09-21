@@ -17,14 +17,6 @@ h3, h5{
   padding: 1%;
 }
 
-.container{
-  margin: auto;
-  align-items: center;
-  border: 1px solid chocolate;
-  width: 95%;
-}
-
-
 header {
   background-color: #483D8B;
   color: #ffffff
@@ -34,10 +26,11 @@ header {
   border-bottom: #C71585 2px solid;
 }
 
-
-li{
-  margin: 1px;
-  padding: 1px;
+header .nav{
+  margin: auto;
+  align-items: center;
+  border: 1px solid chocolate;
+  width: 95%;
 }
 
 header a{
@@ -52,12 +45,32 @@ header a:hover {
   color: hotpink;
 }
 
+header .profilepic{
+  margin: auto;
+  align-items: center;
+  border: 1px solid chocolate;
+  width: 95%;
+}
+
 .profilepic img{
   margin-left: 40%;
   margin-right: 50%;
 }
 
+li{
+  margin: 1px;
+  padding: 1px;
+}
+
 .aboutme{
+  margin:auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
+}
+
+.education{
   margin:auto;
   padding: 1%;
   align-items: center;
@@ -75,7 +88,7 @@ header a:hover {
 
 
 table{
-  width:auto;
+  width:60%;
   padding: 1%;
   border: 1px solid orange;
   margin: auto;
@@ -84,6 +97,7 @@ table{
 tr, td{
   margin: auto;
   border: 1px solid maroon;
+  font-size: 20px;
 }
 
 .interest{
@@ -92,23 +106,6 @@ tr, td{
   align-items: center;
   width: 60%;
   border: 1px solid brown;
-}
-
-.fav_vids{
-  margin: auto;
-  padding: 1%;
-  align-items: center;
-  width: 60%;
-  border: 1px solid brown;
-}
-
-.resp-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 .fav_sites{
@@ -121,6 +118,14 @@ tr, td{
 
 a:hover {
   color: green;
+}
+
+.fav_vids{
+  margin: auto;
+  padding: 1%;
+  align-items: center;
+  width: 60%;
+  border: 1px solid brown;
 }
 
 .webimg{
