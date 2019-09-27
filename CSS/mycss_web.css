@@ -29,8 +29,12 @@ h1 {
   color: DarkRed;
 }
 
-h2, h6 {
+h2{
   color: DarkRed;
+}
+
+header h5{
+  color: white;
 }
 
 h4 a{
