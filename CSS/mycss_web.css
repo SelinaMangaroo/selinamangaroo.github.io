@@ -21,6 +21,7 @@ header a {
 }
 
 header a:hover {
+  background-color: white;
   color: crimson;
 }
 
