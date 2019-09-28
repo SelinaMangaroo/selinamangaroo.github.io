@@ -21,7 +21,6 @@ header a {
 }
 
 header a:hover {
-  background-color: white;
   color: crimson;
 }
 
@@ -33,7 +32,7 @@ h2{
   color: DarkRed;
 }
 
-header h5{
+header h5, h6{
   color: white;
 }
 
@@ -70,20 +69,26 @@ p {
   width: auto;
 }
 
+.table{
+  margin: auto;
+  padding: 1%;
+  width: auto;
+}
+
 table {
   padding: 1%;
   margin-right: auto;
 }
 
-th {
+table th {
   color: maroon;
-  font-size: 24px;
+  font-size: 18px;
 }
 
-tr, td {
+table tr, td {
   margin: auto;
   border: 1px solid maroon;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .interest {

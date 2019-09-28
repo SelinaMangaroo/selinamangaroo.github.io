@@ -4,132 +4,210 @@
 <head>
   <title>Selina Mangaroo Profile</title>
   <meta name="viewport" type="text/css" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="/CSS/mycss_web.css">
-  <link rel="stylesheet" type="text/css" href="/CSS/mycss_tablet.css">
-  <link rel="stylesheet" type="text/css" media="print" href="/CSS/print_style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/mycss_web.css">
+  <link rel="stylesheet" type="text/css" href="CSS/mycss_tablet.css">
+  <link rel="stylesheet" type="text/css" media="print" href="CSS/print_style.css">
+
+  <!---BootStrap --->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<a name="top"></a>
+  <a name="top"></a>
   <header style="text-align:center">
-    <div class="nav">
-      <h5>Menu</h5>
-      <a href="#about_me">Read About Me!</a>
-      <a href="#education">Education</a>
-      <a href="#work_exp">Work Experience</a>
-      <a href="#interest">Interests</a>
-      <a href="#fav_sites">Websites</a>
-      <a href="#fav_vids">Music Video</a>
-    </div>
+    <h6>Menu</h6>
 
+    <!--- bootstrap nav bar --->
+    <nav class="navbar navbar-expand-sm justify-content-center bg-info navbar-dark">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#about_me">Read About Me!</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#education">Education</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#work_exp">Work Experience</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#interest">Interests</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#fav_sites">Websites</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#fav_vids">Music Video</a> </li>
+      </ul>
+    </nav>
+
+    <!--- Bootstrap thumbnail pic--->
     <div class="profilepic">
       <h1>Selina Mangaroo</h1>
-      <img src="/images/ProfilePic.jpg" width="250" height="325" align="center">
+      <img src="images/ProfilePic.jpg" width="250" height="325" alt="Selina Profile Pic" class="img-thumbnail img-fluid">
     </div>
 
   </header>
 
   <div class="content">
 
-    <div class="aboutme">
-      <a name="about_me">
-        <h2 style="font-size: 24px"> <b>About me</b> </h2>
-      </a>
-      <p>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain! My birthday is July 22nd I was born
-        and raised in Queens, New York. My favorite color is <span style="color:purple">Purple</span>.</p>
-      </p>
+
+    <!--- bootstrap container --->
+    <div class="container.fluid">
+      <div class="row justify-content-center">
+
+        <div class="col-sm-4">
+          <div class="aboutme">
+            <a name="about_me">
+              <h2 style="font-size: 24px"> <b>About me</b> </h2>
+            </a>
+            <p>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain! My birthday is July 22nd I was born
+              and raised in Queens, New York. My favorite color is <span style="color:purple">Purple</span>.</p>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-4">
+          <div class="education">
+            <a name="education">
+              <h2 style="font-size: 24px"> <b>Education</b> </h2>
+            </a>
+            <p>St. Johns University May 2020</p>
+            <p>Major: Computer Science, with a concentration in Business</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="table table-striped">
+            <!---Bootstrap Table striped --->
+            <h2 style="font-size: 24px"> <b>Programming Skills</b> </h2>
+            <table>
+              <thead>
+                <tr align="center">
+                  <th>Language</th>
+                  <th>Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr align="center">
+                  <td>Java</td>
+                  <td>Intermediate</td>
+                </tr>
+                <tr align="center">
+                  <td>HTML</td>
+                  <td>Beginner</td>
+                </tr>
+                <tr align="center">
+                  <td>Python</td>
+                  <td>Beginner</td>
+                </tr>
+                <tr align="center">
+                  <td>Javascript</td>
+                  <td>Beginner</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="education">
-      <a name="education">
-        <h2 style="font-size: 24px"> <b>Education</b> </h2>
-      </a>
-      <p>St. Johns University May 2020</p>
-      <p>Major: Computer Science, with a concentration in Business</p>
+    <!--- bootstrap container --->
+    <div class="container.fluid">
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="workexp">
+            <a name="work_exp">
+              <h2 style="font-size: 24px"> <b>Work Experience</b> </h2>
+            </a>
+            <p>Explainer Trainee - New York Hall of Science</p>
+            <p>Diversity Peer Educator - St. Johns University</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="interest">
+            <a name="interest">
+              <h2 style="font-size: 24px"> <b>Interests</b> </h2>
+            </a>
+            <ul>
+              <li>Watching Youtube</li>
+              <li>Watching Netflix</li>
+              <li>Hanging out with friends</li>
+              <li>Astrology</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="fav_sites">
+            <a name="fav_sites">
+              <h2 style="font-size: 24px"> <b>Favorite Websites</b> </h2>
+            </a>
+            <ul>
+              <li> <a href="https://www.google.com"> Google </a> </li>
+              <li> <a href="https://www.amazon.com"> Amazon </a> </li>
+              <li> <a href="https://www.youtube.com"> Youtube </a> </li>
+              <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="workexp">
-      <a name="work_exp">
-        <h2 style="font-size: 24px"> <b>Work Experience</b> </h2>
-      </a>
-      <p>Explainer Trainee - New York Hall of Science</p>
-      <p>Diversity Peer Educator - St. Johns University</p>
-    </div>
-
-    <div class="table">
-      <table>
-        <tr>
-          <th> Programming Skills </th>
-        </tr>
-        <tr align="center">
-          <td>Intermediate Java</td>
-        </tr>
-        <tr align="center">
-          <td>Beginner HTML</td>
-        </tr>
-        <tr align="center">
-          <td>Beginner Python</td>
-        </tr>
-        <tr align="center">
-          <td>Beginner Javascript</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="interest">
-      <a name="interest">
-        <h2 style="font-size: 24px"> <b>Interests</b> </h2>
-      </a>
-      <ul>
-        <li>Watching Youtube</li>
-        <li>Watching Netflix</li>
-        <li>Hanging out with friends</li>
-        <li>Astrology</li>
-      </ul>
-    </div>
-
-    <div class="fav_sites">
-      <a name="fav_sites">
-        <h2 style="font-size: 24px"> <b>Favorite Websites</b> </h2>
-      </a>
-      <ul>
-        <li> <a href="https://www.google.com"> Google </a> </li>
-        <li> <a href="https://www.amazon.com"> Amazon </a> </li>
-        <li> <a href="https://www.youtube.com"> Youtube </a> </li>
-        <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
-      </ul>
-    </div>
-
-    <div class=fav_vids>
-      <a name="fav_vids">
+    <!--- bootstrap container --->
+    <div class="container.fluid">
+      <div class="webimg">
         <h2 style="font-size: 24px"> <b>Favorite Music Video</b> </h2>
-      </a>
-      <p>Miley Cyrus - The Climb</p>
-      <iframe src="https://www.youtube.com/embed/NG2zyeVRcbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Queen - Bohemian Rhapsody</p>
+          <!--- bootstrap responsive embedded video --->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
-    <div class="webimg">
-      <h2 style="font-size: 24px"> <b>Web Hosted Image</b> </h2>
-      <p>Pretty Flowers!</p>
-      <img src="https://www.amazingclubs.com/img/small/flowerofthemonthclub.jpg" width="200" height="200">
-    </div>
 
-    <div class="form">
-      <h2 style="font-size: 24px"> <b>Form</b> </h2>
-      <form class="" action="profile.html" method="post">
-        <!--- allows user input --->
-        <input type="text" placeholder="Enter your username" name="username" value="">
-        <input type="text" placeholder="Enter your password" name="password" value="">
-        <input type="submit" value="submit">
-      </form>
-    </div>
+    <!--- bootstrap container --->
+    <div class="container.fluid">
+      <div class="row">
 
-      <div class="scroll_top">
-        <h4 ><a href="#top">Back to Menu</a></h4>
+        <div class="col-sm-12">
+          <div class="webimg">
+            <h2 style="font-size: 24px"> <b>Web Hosted Image</b> </h2>
+              <!--- bootstrap fluid image --->
+            <img src="https://www.worldatlas.com/r/w728-h425-c728x425/upload/13/97/3c/shutterstock-1031933542.jpg" class="img-fluid align-self-center mr-3">
+            <h4>Palm Trees</h4>
+            <p>When the storm hits, be like a palm tree. When storms come, palm trees can bend quite a lot,
+              even to the point of being horizontal to the ground. But they don’t break. When the storm dies down,
+              the palm tree is able to stand upright again. When the storm is over and the palm tree stands upright
+              again, the palm tree is actually stronger than it was before the storm. It comes back from the storm
+              better and stronger than ever.</p>
+          </div>
+        </div>
+
       </div>
 
-  </div>  <!--- end content div --->
+      <!--- Bootstrap form --->
+      <div class="form">
+        <h2 style="font-size: 24px"> <b>Form</b> </h2>
+        <form class="form-inline" action="" method="">
+          <label for="username" class="mr-sm-2">Username:</label>
+          <input type="text" class="form-control mb-2 mr-sm-2" id="username">
+          <label for="pwd" class="mr-sm-2">Password:</label>
+          <input type="password" class="form-control mb-2 mr-sm-2" id="pwd">
+          <div class="form-check mb-2 mr-sm-2">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </div>
+
+      <div class="scroll_top">
+        <h4><a href="#top">Back to Menu</a></h4>
+      </div>
+
+    </div>
+
+  </div>
+  <!--- end content div --->
 
 </body>
 
