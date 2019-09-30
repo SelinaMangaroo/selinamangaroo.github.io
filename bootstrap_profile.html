@@ -7,7 +7,6 @@
   <link rel="stylesheet" type="text/css" href="CSS/mycss_web.css">
   <link rel="stylesheet" type="text/css" href="CSS/mycss_tablet.css">
   <link rel="stylesheet" type="text/css" media="print" href="CSS/print_style.css">
-
   <!---BootStrap --->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,7 +18,6 @@
   <a name="top"></a>
   <header style="text-align:center">
     <h6>Menu</h6>
-
     <!--- bootstrap nav bar --->
     <nav class="navbar navbar-expand-sm justify-content-center bg-info navbar-dark">
       <ul class="navbar-nav justify-content-center">
@@ -31,45 +29,47 @@
         <li class="nav-item"> <a class="nav-link" href="#fav_vids">Music Video</a> </li>
       </ul>
     </nav>
-
     <!--- Bootstrap thumbnail pic--->
     <div class="profilepic">
-      <h1>Selina Mangaroo</h1>
-      <img src="images/ProfilePic.jpg" width="250" height="325" alt="Selina Profile Pic" class="img-thumbnail img-fluid">
+      <h1>Selina Mangaroo <img src="images/ProfilePic.jpg" width="250" height="325" alt="Selina Profile Pic" class="rounded-circle img-fluid"></h1>
     </div>
-
   </header>
 
   <div class="content">
 
     <!--- bootstrap container --->
     <div class="container.fluid">
-      <div class="row justify-content-center">
 
-        <div class="col-sm-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-5">
           <div class="aboutme">
             <a name="about_me">
               <h2 style="font-size: 24px"> <b>About me</b> </h2>
             </a>
-            <p>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain! My birthday is July 22nd I was born
-              and raised in Queens, New York. My favorite color is <span style="color:purple">Purple</span>.</p>
+            <p><b>Greetings! I am a senior comp sci student! I like pina coladas and getting caught in the rain! My birthday is July 22nd I was born
+                and raised in Queens, New York. My favorite color is <span style="color:purple">Purple</span>.</b></p>
             </p>
           </div>
-
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-5">
           <div class="education">
             <a name="education">
               <h2 style="font-size: 24px"> <b>Education</b> </h2>
             </a>
-            <p>St. Johns University May 2020</p>
-            <p>Major: Computer Science, with a concentration in Business</p>
+            <ul>
+              <li><b>St. Johns University May 2020</b></li>
+              <li><b>Major: Computer Science, with a concentration in Business</b></li>
+            </ul>
           </div>
         </div>
+      </div>
+      <!---row end --->
 
-        <div class="col-sm-4">
-          <div class="table table-striped">
+      <div class="row justify-content-center">
+
+        <div class="col-sm-5">
+          <div class="table container-fluid table-striped">
             <!---Bootstrap Table striped --->
             <h2 style="font-size: 24px"> <b>Programming Skills</b> </h2>
             <table>
@@ -92,9 +92,35 @@
                   <td>Python</td>
                   <td>Beginner</td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-sm-5">
+          <div class="table container-fluid table-striped">
+            <a name="work_exp">
+              <h2 style="font-size: 24px"> <b>Work Experience</b> </h2>
+            </a>
+            <table>
+              <thead>
                 <tr align="center">
-                  <td>Javascript</td>
-                  <td>Beginner</td>
+                  <th>Position</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr align="center">
+                  <td>Explainer Trainee</td>
+                  <td>New York Hall of Science</td>
+                </tr>
+                <tr align="center">
+                  <td>Diversity Peer Educator</td>
+                  <td>St. John's University</td>
+                </tr>
+                <tr align="center">
+                  <td>Child Care Provider</td>
+                  <td>Queens, New York</td>
                 </tr>
               </tbody>
             </table>
@@ -102,112 +128,103 @@
         </div>
 
       </div>
-    </div>
+      <!---row end --->
 
-    <!--- bootstrap container --->
-    <div class="container.fluid">
-      <div class="row">
+      <div class="row justify-content-center">
 
-        <div class="col-sm-4">
-          <div class="workexp">
-            <a name="work_exp">
-              <h2 style="font-size: 24px"> <b>Work Experience</b> </h2>
-            </a>
-            <p>Explainer Trainee - New York Hall of Science</p>
-            <p>Diversity Peer Educator - St. Johns University</p>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
+        <div class="col-sm-5">
           <div class="interest">
             <a name="interest">
               <h2 style="font-size: 24px"> <b>Interests</b> </h2>
             </a>
             <ul>
-              <li>Watching Youtube</li>
-              <li>Watching Netflix</li>
-              <li>Hanging out with friends</li>
-              <li>Astrology</li>
+              <li><b>Watching Youtube</b></li>
+              <li><b>Watching Netflix</b></li>
+              <li><b>Hanging out with friends</b></li>
+              <li><b>Astrology</b></li>
             </ul>
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-5">
           <div class="fav_sites">
             <a name="fav_sites">
               <h2 style="font-size: 24px"> <b>Favorite Websites</b> </h2>
             </a>
             <ul>
-              <li> <a href="https://www.google.com"> Google </a> </li>
-              <li> <a href="https://www.amazon.com"> Amazon </a> </li>
-              <li> <a href="https://www.youtube.com"> Youtube </a> </li>
-              <li> <a href="https://www.astrotheme.com"> Astrotheme </a> </li>
+              <li> <a href="https://www.google.com"> <b>Google</b></a> </li>
+              <li> <a href="https://www.amazon.com"> <b>Amazon</b></a> </li>
+              <li> <a href="https://www.youtube.com"> <b>Youtube</b></a> </li>
+              <li> <a href="https://www.astrotheme.com"> <b>Astrotheme</b></a> </li>
             </ul>
           </div>
         </div>
 
       </div>
-    </div>
+      <!--- row end--->
 
-    <!--- bootstrap container --->
-    <div class="container.fluid">
-      <div class="fav_vids">
-        <h2 style="font-size: 24px"> <b>Favorite Music Video</b> </h2>
-        <p>Queen - Bohemian Rhapsody</p>
-          <!--- bootstrap responsive embedded video --->
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="row justify-content-center">
+        <div class="col-sm-10">
+          <div class="fav_vids">
+            <a name="fav_vids">
+              <h2 style="font-size: 24px"> <b>Favorite Music Video</b> </h2>
+            </a>
+            <p><b>Queen - Bohemian Rhapsody</b></p>
+            <!--- bootstrap responsive embedded video --->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-
-    <!--- bootstrap container --->
-    <div class="container.fluid">
-      <div class="row">
-
-        <div class="col-sm-12">
+      <div class="row justify-content-center">
+        <div class="col-sm-10">
           <div class="webimg">
             <h2 style="font-size: 24px"> <b>Web Hosted Image</b> </h2>
-              <!--- bootstrap fluid image --->
+            <!--- bootstrap fluid image --->
             <img src="https://www.worldatlas.com/r/w728-h425-c728x425/upload/13/97/3c/shutterstock-1031933542.jpg" class="img-fluid align-self-center mr-3">
-            <h4>Palm Trees</h4>
-            <p>When the storm hits, be like a palm tree. When storms come, palm trees can bend quite a lot,
-              even to the point of being horizontal to the ground. But they don’t break. When the storm dies down,
-              the palm tree is able to stand upright again. When the storm is over and the palm tree stands upright
-              again, the palm tree is actually stronger than it was before the storm. It comes back from the storm
-              better and stronger than ever.</p>
+            <h4><b>Palm Trees</b></h4>
+            <p><b>When the storm hits, be like a palm tree. When storms come, palm trees can bend quite a lot,
+                even to the point of being horizontal to the ground. But they don’t break. When the storm dies down,
+                the palm tree is able to stand upright again. When the storm is over and the palm tree stands upright
+                again, the palm tree is actually stronger than it was before the storm. It comes back from the storm
+                better and stronger than ever.</b></p>
           </div>
         </div>
-
       </div>
 
-      <!--- Bootstrap form --->
-      <div class="form">
-        <h2 style="font-size: 24px"> <b>Form</b> </h2>
-        <form class="form-inline" action="" method="">
-          <label for="username" class="mr-sm-2">Username:</label>
-          <input type="text" class="form-control mb-2 mr-sm-2" id="username">
-          <label for="pwd" class="mr-sm-2">Password:</label>
-          <input type="password" class="form-control mb-2 mr-sm-2" id="pwd">
-          <div class="form-check mb-2 mr-sm-2">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox"> Remember me
-            </label>
+      <div class="row justify-content-center">
+        <div class="col-sm-10">
+          <!--- Bootstrap form --->
+          <div class="form">
+            <h2 style="font-size: 24px"> <b>Form</b> </h2>
+            <form class="form-inline" action="" method="">
+              <label for="username" class="mr-sm-2">Username:</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="username">
+              <label for="pwd" class="mr-sm-2">Password:</label>
+              <input type="password" class="form-control mb-2 mr-sm-2" id="pwd">
+              <div class="form-check mb-2 mr-sm-2">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
           </div>
-          <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
+        </div>
       </div>
 
-      <div class="scroll_top">
-        <h4><a href="#top">Back to Menu</a></h4>
+      <div class="row justify-content-center">
+        <div class="scroll_top">
+          <h4><a href="#top">Back to Menu</a></h4>
+        </div>
       </div>
 
     </div>
-
+    <!---Container end --->
   </div>
-  <!--- end content div --->
+  <!---Content end--->
 
 </body>
-
 </html>

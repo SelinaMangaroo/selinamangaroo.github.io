@@ -41,12 +41,12 @@ h4 a{
 }
 
 p {
-  font-family: Helvetica;
+  font-family: helvetica;
 }
 
 .content {
   background-color: Salmon;
-  font-family: Verdana, sans-serif;
+  font-family: helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -111,7 +111,6 @@ table tr, td {
 .fav_sites a{
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .fav_sites a:hover {
