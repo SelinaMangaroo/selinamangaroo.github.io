@@ -1,0 +1,87 @@
+header {
+  background-color: #483D8B;
+  color: #ffffff;
+  min-height: 70px;
+  padding-top: 10px;
+}
+
+header .nav {
+  margin: auto;
+  border: 1px solid chocolate;
+  width: 100%;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: auto;
+}
+
+h1 {
+  color: DarkRed;
+}
+
+h2{
+  color: DarkRed;
+}
+
+p {
+  font-family: helvetica;
+}
+
+.content {
+  background-color: Salmon;
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.aboutme {
+  margin: auto;
+  padding: 1%;
+  width: auto;
+}
+
+.education {
+  margin: auto;
+  padding: 1%;
+  width: auto;
+}
+
+.pro_skills{
+  margin: auto;
+  padding: 1%;
+  width: auto;
+}
+
+.work_exp {
+  margin: auto;
+  padding: 1%;
+  width: auto;
+}
+
+table th {
+  color: maroon;
+  font-size: 16px;
+}
+
+table tr, td {
+  font-size: 15px;
+}
+
+.interest {
+  margin: auto;
+  padding: 1%;
+  width: auto;
+}
+
+.fav_sites a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.fav_sites a:hover {
+  color: crimson;
+}
