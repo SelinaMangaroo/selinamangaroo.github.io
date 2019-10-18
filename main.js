@@ -7,27 +7,20 @@ const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
 const choiceD = document.getElementById('D');
 const progress = document.getElementById('progress');
-const scores = document.getElementById('score');
-const img1 = document.getElementById('id1');
+const scoreDiv = document.getElementById('scoreContainer');
+const retake = document.getElementById('retake');
 
 const image1 = new Image(100, 100);
 image1.src = 'images/emptypie.png';
 
-//questions[3].appendChild(image1);
-//document.body.appendChild(image1);
-//document.choices.appendChild(image1);
 const image2 = new Image(100, 100);
 image2.src = 'images/halfpie.png';
 
-//document.body.appendChild(image2);
 const image3 = new Image(100, 100);
 image3.src = 'images/quarterpie.png';
 
-//document.body.appendChild(image3);
 const image4 = new Image(100, 100);
 image4.src = 'images/threequarterpie.png';
-
-//document.body.appendChild(image4);
 
 let questions = [{
     question: 'What is 45 minus 5?',
@@ -39,20 +32,20 @@ let questions = [{
   },
 
   {
-    question: 'What is 50 plus 30?',
-    choiceA: '(a)  70',
-    choiceB: '(b)  80',
-    choiceC: '(c)  65',
-    choiceD: '(d)  75',
+    question: 'What is (1/2) times 30?',
+    choiceA: '(a)  90',
+    choiceB: '(b)  15',
+    choiceC: '(c)  60',
+    choiceD: '(d)  3012',
     correctAnswer: 'B',
   },
 
   {
-    question: 'What is 10 times 10?',
-    choiceA: '(a)  150',
-    choiceB: '(b)  120',
-    choiceC: '(c)  100',
-    choiceD: '(d)  110',
+    question: 'If Jill drives 4 miles to work and again to comeback home each day, how many miles has she driven in a 5 day work week?',
+    choiceA: '(a)  20',
+    choiceB: '(b)  160',
+    choiceC: '(c)  40',
+    choiceD: '(d)  8',
     correctAnswer: 'C',
   },
   {
@@ -63,6 +56,14 @@ let questions = [{
     choiceD: '(d)' + image4.outerHTML,
     correctAnswer: 'C',
   },
+  {
+    question: 'What number place is the "2" located in 32,000',
+    choiceA: '(a)  ones',
+    choiceB: '(b)  tens',
+    choiceC: '(c)  hundreds',
+    choiceD: '(d)  thousands',
+    correctAnswer: 'D',
+  },
 ];
 
 const lastQuestion = questions.length - 1;
@@ -72,6 +73,10 @@ let runningQuestion = 0;
 
 //keeps track of correct answer
 let scoreCount = 0;
+
+function refreshPage() {
+  window.location.reload();
+}
 
 //renders the question in the list
 function renderQuestion() {
@@ -93,6 +98,7 @@ function startQuiz() {
 }
 
 function answerIsCorrect() {
+  document.getElementById(runningQuestion).style.backgroundColor = '#0f0';
   alert('Correct!');
 }
 
@@ -104,12 +110,21 @@ function renderProgress() {
 }
 
 function answerIsWrong() {
+  document.getElementById(runningQuestion).style.backgroundColor = '#f00';
   alert('WRONG! The Correct answer is ' + questions[runningQuestion].correctAnswer);
 }
 
 function scoreRender() {
-  scores.style.display = 'block';
-  alert('You got ' + scoreCount + ' out of ' + questions.length + '.');
+  var scorePerCent = Math.round(100 * (scoreCount / questions.length));
+  alert('You got ' + scoreCount + ' out of ' + questions.length + '. That is ' + scorePerCent + '%');
+  scoreDiv.style.display = 'block';
+  if (scorePerCent >= 80) {
+    scoreDiv.innerHTML += "<p>" + scorePerCent + '% You Passed' + "</p>";
+  } else {
+    scoreDiv.innerHTML += "<p>" + scorePerCent + '% You Failed' + "</p>";
+  }
+
+  retake.style.display = 'block';
 }
 
 function checkAnswer(answer) {
@@ -126,9 +141,5 @@ function checkAnswer(answer) {
     renderQuestion();
   } else {
     scoreRender();
-    mouseClicked = function () {
-      // Restart the program whenever the user clicks the mouse
-      Program.restart();
-    };
   }
 }
