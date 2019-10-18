@@ -10,21 +10,21 @@ const progress = document.getElementById('progress');
 const scores = document.getElementById('score');
 const img1 = document.getElementById('id1');
 
-const image1 = new Image(100, 200);
+const image1 = new Image(100, 100);
 image1.src = 'images/emptypie.png';
 
 //questions[3].appendChild(image1);
 //document.body.appendChild(image1);
 //document.choices.appendChild(image1);
-const image2 = new Image(100, 200);
+const image2 = new Image(100, 100);
 image2.src = 'images/halfpie.png';
 
 //document.body.appendChild(image2);
-const image3 = new Image(100, 200);
+const image3 = new Image(100, 100);
 image3.src = 'images/quarterpie.png';
 
 //document.body.appendChild(image3);
-const image4 = new Image(100, 200);
+const image4 = new Image(100, 100);
 image4.src = 'images/threequarterpie.png';
 
 //document.body.appendChild(image4);
@@ -63,11 +63,6 @@ let questions = [{
     choiceD: '(d)' + image4.outerHTML,
     correctAnswer: 'C',
   },
-  {
-    question: 'What is 16/2',
-    choiceA: ''
-    correctAnswer: '8',
-  },
 ];
 
 const lastQuestion = questions.length - 1;
@@ -78,10 +73,6 @@ let runningQuestion = 0;
 //keeps track of correct answer
 let scoreCount = 0;
 
-function userInput() {
-  var str = document.getElementById('text1').value;
-}
-
 //renders the question in the list
 function renderQuestion() {
   let q = questions[runningQuestion];
@@ -90,10 +81,6 @@ function renderQuestion() {
   choiceB.innerHTML = q.choiceB;
   choiceC.innerHTML = q.choiceC;
   choiceD.innerHTML = q.choiceD;
-
-  if (runningQuestion == lastQuestion) {
-      userInput();
-  }
 }
 
 start.addEventListener('click', startQuiz);
