@@ -1,0 +1,23 @@
+h2{
+  font-size: 250%;
+  color: navy;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 200%;
+  color: midnightblue;
+}
+
+.pub ul {
+  list-style-image: url('https://img.icons8.com/offices/24/000000/brain.png');
+  list-style-position: inside;
+  background: #cef1ff;
+  padding: 1px;
+}
+
+.pub ul li {
+  background: #e0ffff;
+  margin: 10px;
+  color: black;
+}

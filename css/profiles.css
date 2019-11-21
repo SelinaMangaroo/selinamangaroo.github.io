@@ -1,0 +1,27 @@
+#tb {
+  margin-top: 20px;
+}
+
+#profilepic img {
+  width: 350;
+  height: 420;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#selpub li {
+  background: #e0ffff;
+  margin: 10px;
+  color: black;
+  border: solid #cef1ff
+}
+
+#selpub tr{
+  background: #e0ffff;
+  margin: 10px;
+  color: black;
+  border: solid #cef1ff
+}

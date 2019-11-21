@@ -1,0 +1,26 @@
+.lab-text {
+  padding: 15px;
+  font-size: 12pt;
+  color: darkslategray;
+
+}
+
+#labpic img {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h-line {
+  height: 10px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 27, 102, 1);
+}
+
+.top-line {
+  height: 10px;
+  border: 0;
+  box-shadow: rgba(0, 27, 102, 1);
+}

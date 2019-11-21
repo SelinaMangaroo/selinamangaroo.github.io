@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScriptQuiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="start">Click to Begin The Quiz!</div>
+      <div id="quiz" style="display: none">
+        <div id="questions"></div>
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')">A) </div>
+          <div class="choice" id="B" onclick="checkAnswer('B')">B) </div>
+          <div class="choice" id="C" onclick="checkAnswer('C')">C) </div>
+          <div class="choice" id="D" onclick="checkAnswer('D')">D) </div>
+        </div>
+        <div id="progress"></div>
+      </div>
+      <div id="scoreContainer" style="display: none"></div>
+      <div id="retake" style="display: none"><button id="button" onclick="refreshPage()">Retake Quiz</button></div>
+    </div>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+
+</html>
+
+<!---
+
+A student should be able to take a quiz online. The quiz includes different types of question and each
+question has a unique correct answer. During the quiz a student is promoted with a question (one at a
+time) and a way to provide the answer. After each response, the system should provide a feedback to
+the student weather he/she answered the question correctly or not, before the next question appears.
+During the quiz, a scoreboard should keep track and display the number of questions answered so
+far, and the total score. At the end of the quiz, the student you receive a message saying "You pass
+the quiz" if he scores 80% or above and the message saying "You fail the quiz".Moreover, at the end
+of the quiz the student should be given the option to re-take the quiz.
+
+<span style="display:none;">
+ <img id="id1" src="images/emptypie.png" onload="javascript:showImage();">
+</span>
+
+ --->
